@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContractController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3bh-oq-eig">
+                                <rect key="frame" x="70" y="414" width="253" height="157"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Mateusz Kierman
+tel: +48 211 521 370 homepage: www.apple.com e:mail : studen@gmail.com       ul. Fabryczna, Wrocław</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="241-pT-hYW">
+                                <rect key="frame" x="0.0" y="81" width="393" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="hUo-l0-ilF">
+                                <rect key="frame" x="81" y="138" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="hbx-AZ-iXB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="241-pT-hYW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="1Jl-Tw-K8n"/>
+                            <constraint firstItem="241-pT-hYW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3CU-60-njI"/>
+                            <constraint firstItem="3bh-oq-eig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="355" id="4Lu-Gd-Gxr"/>
+                            <constraint firstItem="hUo-l0-ilF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="4so-QU-Sgg"/>
+                            <constraint firstItem="hUo-l0-ilF" firstAttribute="centerX" secondItem="3bh-oq-eig" secondAttribute="centerX" id="A00-BS-1Mc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3bh-oq-eig" secondAttribute="bottom" constant="247" id="AaD-8f-QC6"/>
+                            <constraint firstItem="3bh-oq-eig" firstAttribute="top" secondItem="hUo-l0-ilF" secondAttribute="bottom" constant="46" id="GTj-1y-IMR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="241-pT-hYW" secondAttribute="trailing" id="dpk-NI-igd"/>
+                            <constraint firstItem="hUo-l0-ilF" firstAttribute="top" secondItem="241-pT-hYW" secondAttribute="bottom" constant="17" id="pPg-YG-cbc"/>
+                            <constraint firstItem="hUo-l0-ilF" firstAttribute="centerX" secondItem="241-pT-hYW" secondAttribute="centerX" id="sTG-01-Gjh"/>
+                            <constraint firstItem="3bh-oq-eig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="uCZ-sb-nkO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileImage" destination="hUo-l0-ilF" id="4Je-Zu-l7S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profileImage" width="454" height="484"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
