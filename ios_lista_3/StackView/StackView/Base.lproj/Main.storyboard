@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eAa-hp-MrA">
+                                <rect key="frame" x="-7" y="0.0" width="405" height="850"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone_13" translatesAutoresizingMaskIntoConstraints="NO" id="1bc-ZQ-Bz8">
+                                        <rect key="frame" x="0.0" y="0.0" width="405" height="404"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="404" id="yiO-TJ-ZU6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a7V-FV-44K">
+                                        <rect key="frame" x="0.0" y="404" width="405" height="446"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <mutableString key="text">Apple today introduced iPhone 13 Pro and iPhone 13 Pro Max, pushing the boundaries of what’s possible in a smartphone. Redesigned inside and out, both models introduce an all-new Super Retina XDR display with ProMotion featuring an adaptive refresh rate up to 120Hz, making the touch experience faster and more responsive. The pro camera system gets its biggest advancement ever with new Ultra Wide, Wide, and Telephoto cameras that capture stunning photos and video, powered by the unmatched performance of A15 Bionic, more powerful than the leading competition. These technologies enable impressive new photo capabilities never before possible on iPhone, like macro photography on the new Ultra Wide camera and up to 2.2x improved low-light performance on the new Wide camera.</mutableString>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="MHQ-Yu-GqM"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eAa-hp-MrA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6ro-jg-CpG"/>
+                            <constraint firstItem="eAa-hp-MrA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-23" id="Skp-rr-fo3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eAa-hp-MrA" secondAttribute="bottom" constant="-32" id="lxs-1U-ioR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eAa-hp-MrA" secondAttribute="trailing" constant="-21" id="o3i-A3-nZR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="a7V-FV-44K" id="aFa-qp-K4v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone_13" width="3840" height="2160"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

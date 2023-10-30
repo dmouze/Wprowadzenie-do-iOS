@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57A-ef-JLd">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNM-Ih-Ki5">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeK-hM-PJq">
+                                                <rect key="frame" x="0.0" y="36" width="416" height="200"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone_13" translatesAutoresizingMaskIntoConstraints="NO" id="szF-kQ-fH1">
+                                                        <rect key="frame" x="0.0" y="8" width="393" height="200"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="szF-kQ-fH1" secondAttribute="bottom" constant="-8" id="DEd-Qv-sad"/>
+                                                    <constraint firstItem="szF-kQ-fH1" firstAttribute="leading" secondItem="AeK-hM-PJq" secondAttribute="leading" id="WEg-qo-wrS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="szF-kQ-fH1" secondAttribute="trailing" constant="23" id="hOs-22-99z"/>
+                                                    <constraint firstItem="szF-kQ-fH1" firstAttribute="top" secondItem="AeK-hM-PJq" secondAttribute="topMargin" id="yJg-nq-kKg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRi-np-jCk">
+                                                <rect key="frame" x="0.0" y="279" width="416" height="587"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 13 Pro Max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSr-cX-YKI">
+                                                        <rect key="frame" x="16" y="8" width="270" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D43-0I-sif">
+                                                        <rect key="frame" x="8" y="57" width="380" height="800"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="800" id="HxR-1Z-j57"/>
+                                                        </constraints>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="D43-0I-sif" secondAttribute="trailing" constant="28" id="NDQ-iK-p76"/>
+                                                    <constraint firstItem="D43-0I-sif" firstAttribute="leading" secondItem="aRi-np-jCk" secondAttribute="leadingMargin" id="OPG-DP-MHV"/>
+                                                    <constraint firstItem="kSr-cX-YKI" firstAttribute="leading" secondItem="aRi-np-jCk" secondAttribute="leading" constant="16" id="OdK-Jm-mH9"/>
+                                                    <constraint firstItem="kSr-cX-YKI" firstAttribute="top" secondItem="aRi-np-jCk" secondAttribute="topMargin" id="xc9-Je-tvA"/>
+                                                    <constraint firstItem="D43-0I-sif" firstAttribute="top" secondItem="kSr-cX-YKI" secondAttribute="bottom" constant="8" symbolic="YES" id="y7P-lP-qJJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="AeK-hM-PJq" firstAttribute="trailing" secondItem="aRi-np-jCk" secondAttribute="trailing" id="07Y-I4-ncx"/>
+                                            <constraint firstItem="aRi-np-jCk" firstAttribute="top" secondItem="oNM-Ih-Ki5" secondAttribute="top" constant="279" id="0YU-BU-q5w"/>
+                                            <constraint firstAttribute="bottom" secondItem="aRi-np-jCk" secondAttribute="bottom" constant="-107" id="Ura-2y-iZ4"/>
+                                            <constraint firstAttribute="trailing" secondItem="AeK-hM-PJq" secondAttribute="trailing" constant="-23" id="dyk-hu-XkJ"/>
+                                            <constraint firstItem="AeK-hM-PJq" firstAttribute="leading" secondItem="oNM-Ih-Ki5" secondAttribute="leading" id="foQ-DG-QRg"/>
+                                            <constraint firstItem="AeK-hM-PJq" firstAttribute="top" secondItem="oNM-Ih-Ki5" secondAttribute="top" constant="36" id="gfR-EA-un4"/>
+                                            <constraint firstItem="AeK-hM-PJq" firstAttribute="leading" secondItem="aRi-np-jCk" secondAttribute="leading" id="t4y-OS-q1b"/>
+                                            <constraint firstItem="aRi-np-jCk" firstAttribute="top" secondItem="AeK-hM-PJq" secondAttribute="bottom" constant="43" id="yq9-ks-Wus"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Ykw-2M-pMy"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oNM-Ih-Ki5" secondAttribute="trailing" id="6Y2-19-hOp"/>
+                                    <constraint firstItem="oNM-Ih-Ki5" firstAttribute="leading" secondItem="57A-ef-JLd" secondAttribute="leading" id="AjF-KJ-FsQ"/>
+                                    <constraint firstItem="oNM-Ih-Ki5" firstAttribute="centerX" secondItem="57A-ef-JLd" secondAttribute="centerX" id="EMd-Ec-ibp"/>
+                                    <constraint firstItem="oNM-Ih-Ki5" firstAttribute="bottom" secondItem="Ykw-2M-pMy" secondAttribute="bottom" id="H93-wr-42f"/>
+                                    <constraint firstItem="oNM-Ih-Ki5" firstAttribute="top" secondItem="YfP-nV-rUm" secondAttribute="top" id="ekE-te-Mlk"/>
+                                    <constraint firstAttribute="bottom" secondItem="oNM-Ih-Ki5" secondAttribute="bottom" id="hwh-oG-q9D"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dqT-2O-kf7"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="YfP-nV-rUm"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="57A-ef-JLd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7iy-0d-hag"/>
+                            <constraint firstItem="57A-ef-JLd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O19-FX-mAu"/>
+                            <constraint firstItem="57A-ef-JLd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qVi-Zn-TK9"/>
+                            <constraint firstAttribute="trailing" secondItem="57A-ef-JLd" secondAttribute="trailing" id="yPj-it-IWQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="szF-kQ-fH1" id="D4j-UI-j7M"/>
+                        <outlet property="scrollView" destination="57A-ef-JLd" id="ulU-wi-EFM"/>
+                        <outlet property="textdescription" destination="D43-0I-sif" id="bfN-mW-ohJ"/>
+                        <outlet property="titleLabel" destination="kSr-cX-YKI" id="F6v-P5-LpL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone_13" width="3840" height="2160"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
