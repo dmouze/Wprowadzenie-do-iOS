@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MjQ-7z-sY0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Iron View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IronViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJ7-Xb-w8n">
+                                <rect key="frame" x="96.666666666666686" y="391" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.53836965560000005" green="0.20223423839999999" blue="0.45087891819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8Ce-WQ-Zn7"/>
+                                    <constraint firstAttribute="width" constant="200" id="ZvA-eL-ecd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click to MaroonView">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="incrementCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtp-9B-8a5"/>
+                                    <segue destination="pfM-8j-Y67" kind="show" identifier="ShowCounterSegue" id="U5y-H3-SuX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.37254902719999999" green="0.37254902719999999" blue="0.37254902719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FJ7-Xb-w8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frW-56-Pqh"/>
+                            <constraint firstItem="FJ7-Xb-w8n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p5b-Gf-FN4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Iron View" largeTitleDisplayMode="always" id="J9m-Wf-CmS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="-2"/>
+        </scene>
+        <!--Maroon View-->
+        <scene sceneID="ny3-au-Twp">
+            <objects>
+                <viewController id="pfM-8j-Y67" customClass="MaroonViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3zU-Ou-vLg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="counterLab" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmV-ng-z1h">
+                                <rect key="frame" x="42" y="258" width="307" height="326"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tw-M1-K2A">
+                                <rect key="frame" x="96" y="702" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.37254902719999999" green="0.37254902719999999" blue="0.37254902719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="sB6-p6-RUX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click to IronView">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="XJG-Yb-axe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Ee-d6-xSh"/>
+                        <color key="backgroundColor" red="0.53836965560000005" green="0.20223423839999999" blue="0.45087891819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8tw-M1-K2A" firstAttribute="leading" secondItem="4Ee-d6-xSh" secondAttribute="leading" constant="96" id="7LM-4d-qRg"/>
+                            <constraint firstItem="wmV-ng-z1h" firstAttribute="top" secondItem="4Ee-d6-xSh" secondAttribute="top" constant="258" id="QPu-FX-odz"/>
+                            <constraint firstItem="wmV-ng-z1h" firstAttribute="centerX" secondItem="8tw-M1-K2A" secondAttribute="centerX" id="RSJ-GO-ch8"/>
+                            <constraint firstItem="wmV-ng-z1h" firstAttribute="centerY" secondItem="3zU-Ou-vLg" secondAttribute="centerY" id="Rmx-uU-oYB"/>
+                            <constraint firstItem="4Ee-d6-xSh" firstAttribute="bottom" secondItem="8tw-M1-K2A" secondAttribute="bottom" constant="80" id="Uer-QO-Pwa"/>
+                            <constraint firstItem="8tw-M1-K2A" firstAttribute="centerX" secondItem="3zU-Ou-vLg" secondAttribute="centerX" id="jb2-fL-58V"/>
+                            <constraint firstItem="wmV-ng-z1h" firstAttribute="leading" secondItem="4Ee-d6-xSh" secondAttribute="leading" constant="42" id="we4-qM-wbt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maroon View" largeTitleDisplayMode="always" id="tYZ-MQ-JXf"/>
+                    <connections>
+                        <outlet property="counterLab" destination="wmV-ng-z1h" id="PmF-2n-pkm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irp-8Y-Tbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1925.9541984732823" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kBL-tO-5Se">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MjQ-7z-sY0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XXC-v7-liP">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pmw-Ve-O6m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVF-Cm-WOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XJG-Yb-axe"/>
+    </inferredMetricsTieBreakers>
+</document>
