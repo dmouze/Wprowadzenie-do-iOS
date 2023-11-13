@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8a9-ac-1Hw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contacts View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ContactsViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-Im-AHJ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Contacts" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PVd-QC-HkL">
+                                        <rect key="frame" x="69" y="394" width="255" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="pA4-WM-LdD"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PVd-QC-HkL" firstAttribute="centerY" secondItem="KyF-Im-AHJ" secondAttribute="centerY" id="IKq-65-B3O"/>
+                                    <constraint firstItem="PVd-QC-HkL" firstAttribute="centerX" secondItem="KyF-Im-AHJ" secondAttribute="centerX" id="f4L-Ye-gsB"/>
+                                    <constraint firstItem="PVd-QC-HkL" firstAttribute="leading" secondItem="KyF-Im-AHJ" secondAttribute="leading" constant="69" id="lc7-Z3-gZs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KyF-Im-AHJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="PeT-2L-5VX"/>
+                            <constraint firstItem="KyF-Im-AHJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ril-2b-QDp"/>
+                            <constraint firstItem="KyF-Im-AHJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g2Z-PK-fx9"/>
+                            <constraint firstItem="KyF-Im-AHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hxQ-6C-TUh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Alo-VA-VmL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.37404580152668" y="4.9295774647887329"/>
+        </scene>
+        <!--Bookmarks View Controller-->
+        <scene sceneID="3ir-TU-Hnj">
+            <objects>
+                <viewController id="eGo-Wu-fMb" customClass="BookmarksViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlc-B8-S21">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E08-TO-f9k">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Bookmarks" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NPs-Rg-sae">
+                                        <rect key="frame" x="76" y="393.66666666666669" width="241" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="5Oa-9V-s8l"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="NPs-Rg-sae" firstAttribute="centerX" secondItem="E08-TO-f9k" secondAttribute="centerX" id="En8-Cu-zvh"/>
+                                    <constraint firstItem="NPs-Rg-sae" firstAttribute="leading" secondItem="E08-TO-f9k" secondAttribute="leading" constant="76" id="RE6-Wk-PlZ"/>
+                                    <constraint firstItem="NPs-Rg-sae" firstAttribute="centerY" secondItem="E08-TO-f9k" secondAttribute="centerY" id="ugr-aP-26u"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kcx-SZ-irc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E08-TO-f9k" firstAttribute="centerX" secondItem="vlc-B8-S21" secondAttribute="centerX" id="E6M-jn-tBh"/>
+                            <constraint firstItem="E08-TO-f9k" firstAttribute="leading" secondItem="kcx-SZ-irc" secondAttribute="leading" id="LuD-cc-dLZ"/>
+                            <constraint firstItem="E08-TO-f9k" firstAttribute="top" secondItem="vlc-B8-S21" secondAttribute="topMargin" constant="-59" id="M0e-He-KCb"/>
+                            <constraint firstItem="E08-TO-f9k" firstAttribute="centerY" secondItem="vlc-B8-S21" secondAttribute="centerY" id="RJP-9J-w4b"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="8Qh-1M-Lg1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCA-8z-wAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820.6106870229007" y="4.9295774647887329"/>
+        </scene>
+        <!--Top Rated View Controller-->
+        <scene sceneID="R6t-eU-h0x">
+            <objects>
+                <viewController id="tqy-BT-IuH" customClass="TopRatedViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LoG-0Y-6fs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24S-Wa-gFt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Top Rated" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LQY-ls-MoL">
+                                        <rect key="frame" x="76" y="392" width="241" height="68"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="m80-nh-6jT"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LQY-ls-MoL" firstAttribute="centerX" secondItem="24S-Wa-gFt" secondAttribute="centerX" id="OcB-bo-DzN"/>
+                                    <constraint firstItem="LQY-ls-MoL" firstAttribute="leading" secondItem="24S-Wa-gFt" secondAttribute="leading" constant="76" id="R5Q-Z4-lK7"/>
+                                    <constraint firstItem="LQY-ls-MoL" firstAttribute="centerY" secondItem="24S-Wa-gFt" secondAttribute="centerY" id="yfF-Ii-jyy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F13-fw-oSg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="24S-Wa-gFt" firstAttribute="top" secondItem="LoG-0Y-6fs" secondAttribute="topMargin" constant="-59" id="Uba-re-wAP"/>
+                            <constraint firstItem="24S-Wa-gFt" firstAttribute="centerY" secondItem="LoG-0Y-6fs" secondAttribute="centerY" id="owE-Xm-Vg3"/>
+                            <constraint firstItem="24S-Wa-gFt" firstAttribute="centerX" secondItem="LoG-0Y-6fs" secondAttribute="centerX" id="sE3-i0-0pN"/>
+                            <constraint firstItem="24S-Wa-gFt" firstAttribute="leading" secondItem="F13-fw-oSg" secondAttribute="leading" id="tcw-Kh-ooA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="de2-I1-eAh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hO4-8t-lrB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2687.7862595419847" y="4.9295774647887329"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qYX-3b-6SE">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8a9-ac-1Hw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tiu-a0-684">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Y9y-YN-IMr"/>
+                        <segue destination="eGo-Wu-fMb" kind="relationship" relationship="viewControllers" id="l4u-vn-3RG"/>
+                        <segue destination="tqy-BT-IuH" kind="relationship" relationship="viewControllers" id="aFX-vZ-MSo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9c-GK-LaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5.343511450381679" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
