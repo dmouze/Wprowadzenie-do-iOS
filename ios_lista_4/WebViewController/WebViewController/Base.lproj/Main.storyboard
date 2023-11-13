@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="123-nB-rwa">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3WG-AU-9Dv"/>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CVb-bO-r9O"/>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HoR-6V-2vN"/>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O8n-8e-7bv"/>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OOc-oL-zaB"/>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lgW-ea-r4U"/>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nR5-Yx-6Eg"/>
+                            <constraint firstItem="123-nB-rwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uCi-Ly-g7u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="123-nB-rwa" id="IPU-cn-pQk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
